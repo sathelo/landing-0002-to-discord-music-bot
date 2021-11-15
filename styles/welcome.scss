@@ -1,0 +1,59 @@
+.welcome {
+  position: relative;
+
+  padding-top: 236px;
+
+  z-index: -1;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__waves {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+
+    width: 100%;
+  }
+
+  h1 {
+    color: #ffffff;
+
+    margin-bottom: 76px;
+  }
+
+  .button {
+    margin: 0 auto;
+  }
+
+  &__computer {
+    position: relative;
+
+    display: block;
+
+    height: 589px;
+    width: 1054px;
+
+    margin: 40px auto 0;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    video {
+      position: absolute;
+      left: 118.93px;
+      top: 23.76px;
+
+      width: 812px;
+      height: 507px;
+
+      object-fit: cover;
+    }
+  }
+}

@@ -2,20 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Discord Site</title>
+    <title>Лучший музыкальный дискорд бот | Normalfaggotbot</title>
   </head>
   <body>
+    <!-- Шапка сайта -->
     <header class="header">
-      <div class="text container">
-        <div class="logo">Лого</div>
-        <div class="commands">Команды</div>
-        <div class="documentation">Документация</div>
-        <div class="news">Новости</div>
-        <div class="add_bot">Добавить бота на сервер</div>
+      <div class="header__body container">
+        <div class="logo header__logo">
+          <a href="./" title="Домой">
+            <img src="./images/photo_logo.png" alt="Лого" />
+          </a>
+        </div>
+
+        <nav class="header__nav">
+          <a href="#" title="Команды">Команды</a>
+          <a href="#" title="Документация">Документация</a>
+          <a href="#" title="Новости">Новости</a>
+          <a href="#" title="Добавить бота на сервер"
+            >Добавить бота на сервер</a
+          >
+        </nav>
       </div>
     </header>
+
+    <!-- Тело сайта -->
+    <section class="welcome">
+      <img class="welcome__waves" src="./images/waves.svg" alt="Волны" />
+      <div class="welcome__body container">
+        <h1>
+          Normalfaggotbot - лучший бесплатный музыкальный бот для Discordv
+        </h1>
+        <a
+          class="button"
+          href="https://discord.com/api/oauth2/authorize?client_id=877243621299064902&permissions=8&scope=bot"
+          title="Добавить бота на сервер"
+          target="_blank"
+          >Добавить на свой сервер Discord</a
+        >
+      </div>
+      <div class="welcome__computer">
+        <picture>
+          <img src="./images/computer.png" alt="Компьютер" />
+        </picture>
+        <video
+          controls
+          autoplay
+          loop
+          muted
+          src="./video/banner_block_one.mp4"
+          type="video/mp4"
+        ></video>
+      </div>
+    </section>
 
     <script type="module" src="/main.js"></script>
   </body>
