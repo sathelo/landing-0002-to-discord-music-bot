@@ -2,8 +2,7 @@
   position: relative;
 
   padding-top: 236px;
-
-  z-index: -1;
+  padding-bottom: 135px;
 
   &__body {
     display: flex;
@@ -18,14 +17,16 @@
     left: 0;
 
     z-index: -1;
+    object-fit: cover;
 
     width: 100%;
+    height: 100%;
   }
 
   h1 {
     color: #ffffff;
 
-    margin-bottom: 76px;
+    margin-bottom: 90px;
   }
 
   .button {
@@ -40,7 +41,7 @@
     height: 589px;
     width: 1054px;
 
-    margin: 40px auto 0;
+    margin: 115px auto 0;
     img {
       height: 100%;
       width: 100%;

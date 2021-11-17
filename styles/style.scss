@@ -2,4 +2,4 @@
 @import "base.scss";
 @import "header.scss";
 @import "ui.scss";
-@import "welcome.scss";
+@import "./sections/commands.scss", "./sections/welcome.scss";

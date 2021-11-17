@@ -3,7 +3,11 @@
 
   color: #ffffff;
 
+  z-index: 1000;
+
   width: 100%;
+
+  background: rgba(#2288ff, 0.9);
   &__body {
     display: flex;
     align-items: center;

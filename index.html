@@ -2,6 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="icon" type="image/svg+xml" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Лучший музыкальный дискорд бот | Normalfaggotbot</title>
@@ -31,9 +37,7 @@
     <section class="welcome">
       <img class="welcome__waves" src="./images/waves.svg" alt="Волны" />
       <div class="welcome__body container">
-        <h1>
-          Normalfaggotbot - лучший бесплатный музыкальный бот для Discordv
-        </h1>
+        <h1>Normalfaggotbot - лучший бесплатный музыкальный бот для Discord</h1>
         <a
           class="button"
           href="https://discord.com/api/oauth2/authorize?client_id=877243621299064902&permissions=8&scope=bot"
@@ -41,19 +45,89 @@
           target="_blank"
           >Добавить на свой сервер Discord</a
         >
+
+        <div class="welcome__computer">
+          <picture>
+            <img src="./images/computer.png" alt="Как подключить бота" />
+          </picture>
+          <video
+            controls
+            autoplay
+            loop
+            muted
+            src="./video/banner_block_one.mp4"
+            type="video/mp4"
+          ></video>
+        </div>
       </div>
-      <div class="welcome__computer">
-        <picture>
-          <img src="./images/computer.png" alt="Компьютер" />
-        </picture>
-        <video
-          controls
-          autoplay
-          loop
-          muted
-          src="./video/banner_block_one.mp4"
-          type="video/mp4"
-        ></video>
+    </section>
+
+    <section class="commands">
+      <div class="commands__body container">
+        <h3>Как использовать дискорд бота</h3>
+        <h2>Команды</h2>
+        <h4>
+          Список команд может увеличиваться или уменьшаться, так что следите за
+          обновлениями
+        </h4>
+
+        <div class="commands__wrapper">
+          <div class="commands__video">
+            <picture>
+              <img src="./images/browser.svg" alt="Команды" />
+            </picture>
+            <video
+              controls
+              autoplay
+              loop
+              muted
+              src="./video/banner_block_two.mp4"
+              type="video/mp4"
+            ></video>
+          </div>
+
+          <div class="commands__instruction">
+            <div class="commands-card">
+              <h3 class="commands-card__title">
+                <span>
+                  <i class="fas fa-book"></i>
+                </span>
+                Документация
+              </h3>
+              <div class="commands-card__text">
+                Для работы с Normalfaggotbot, необходимо:
+                <br />
+                1. Изначально добавить Normalfaggotbot на ваш дискорд сервер
+                <br />
+                2. Пригласить бота в голосовой чат, воспользовавшись командой
+                !play(!p) или !add_song(!add)
+                <br />
+                3. Наслаждаться музыкой
+              </div>
+            </div>
+
+            <div class="commands-card">
+              <h3 class="commands-card__title">
+                <span>
+                  <i class="fas fa-list"></i>
+                </span>
+                Команды
+              </h3>
+              <div class="commands-card__text">
+                Префикс для команд "!". Весь список команд !help: <br />
+                Присоединение в голосовой чат происходит при помощи двух команд
+                <br />
+                !play(!p) или !add_song(!add) <br />
+                1. !play(!p) - Запуск youtube клипа по ссылке <br />
+                2. !add_song(!add) - Добавление youtube клипа в очередь <br />
+                3. !pause - Приостановить youtube клип <br />
+                4. !resume - Возобновить youtube клип <br />
+                5. !skip(!s) - Пропустить youtube клип <br />
+                6. !disconnect - Отключения из голосового чата
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
