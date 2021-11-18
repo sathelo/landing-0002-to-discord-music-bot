@@ -44,3 +44,12 @@
     line-height: 27px;
   }
 }
+
+.footer {
+  color: #ffffff;
+
+  background: rgba(37, 43, 66, 1);
+  &__body {
+    padding: 107px 0;
+  }
+}
