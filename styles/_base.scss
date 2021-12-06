@@ -34,6 +34,11 @@ h1 {
 
   text-align: center;
   letter-spacing: 0.2px;
+
+  @media screen and (max-width: 772px) {
+    line-height: 55px;
+    font-size: 42px;
+  }
 }
 
 h3 {
@@ -44,6 +49,11 @@ h3 {
 
   text-align: center;
   letter-spacing: 0.1px;
+
+  @media screen and (max-width: 772px) {
+    line-height: 22px;
+    font-size: 18px;
+  }
 }
 
 h2 {
@@ -54,6 +64,17 @@ h2 {
 
   text-align: center;
   letter-spacing: 0.2px;
+
+  @media screen and (max-width: 772px) {
+    line-height: 46px;
+    font-size: 32px;
+  }
+  @media screen and (max-width: 320px) {
+    line-height: 32px;
+    font-size: 24px;
+
+    color: #ffffff;
+  }
 }
 
 h4 {
@@ -64,4 +85,9 @@ h4 {
 
   text-align: center;
   letter-spacing: 0.2px;
+
+  @media screen and (max-width: 772px) {
+    line-height: 16px;
+    font-size: 12px;
+  }
 }

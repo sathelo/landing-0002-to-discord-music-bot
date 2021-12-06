@@ -15,6 +15,15 @@
     gap: 60px;
 
     padding: 80px 0;
+
+    @media screen and (max-width: 1023px) {
+      padding: 80px 60px;
+    }
+    @media screen and (max-width: 772px) {
+      padding: 100px 60px;
+
+      gap: 70px;
+    }
   }
   &-card {
     display: flex;
@@ -91,6 +100,14 @@
 
         text-decoration: none;
       }
+    }
+    @media screen and (max-width: 1023px) {
+      width: calc((100% - 60px) / 2);
+    }
+    @media screen and (max-width: 772px) {
+      width: calc(100% / 1);
+
+      max-width: 300px;
     }
   }
 }

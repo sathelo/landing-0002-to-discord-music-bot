@@ -26,7 +26,10 @@
     height: 75px;
     img {
       max-width: 75px;
+
       object-fit: cover;
+
+      opacity: 0.9;
     }
   }
 
@@ -48,6 +51,8 @@
 .footer {
   color: #ffffff;
 
+  padding: 107px 0;
+
   background: rgba(37, 43, 66, 1);
 
   &__basement {
@@ -62,8 +67,6 @@
   }
 
   &__body {
-    padding: 107px 1rem;
-
     .footer-menu-list {
       display: flex;
       flex-wrap: wrap;
@@ -97,8 +100,13 @@
         line-height: 57px;
 
         letter-spacing: 0.2px;
+        text-align: left;
 
         color: #ffffff;
+
+        @media screen and (max-width: 772px) {
+          font-size: 32px;
+        }
       }
       h3 {
         font-style: normal;
@@ -116,6 +124,9 @@
         text-decoration: none;
 
         color: #ffffff;
+      }
+      @media screen and (max-width: 772px) {
+        gap: 40px;
       }
     }
   }
