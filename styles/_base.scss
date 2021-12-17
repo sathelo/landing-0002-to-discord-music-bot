@@ -91,3 +91,11 @@ h4 {
     font-size: 12px;
   }
 }
+
+a {
+  transition: 0.2s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
