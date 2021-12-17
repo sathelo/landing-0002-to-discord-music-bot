@@ -26,7 +26,17 @@
     height: 75px;
     img {
       max-width: 75px;
+
       object-fit: cover;
+
+      opacity: 0.9;
+    }
+    &:hover {
+      border: 1px solid red;
+
+      opacity: 1;
+
+      box-shadow: inset 0 0 5px 0 #333;
     }
   }
 
@@ -35,6 +45,28 @@
     align-items: center;
     justify-content: flex-start;
     gap: 21px;
+
+    @media screen and (max-width: 600px) {
+      position: fixed;
+      top: 0px;
+      bottom: 0px;
+      right: -100%;
+
+      width: 100%;
+      height: 100%;
+
+      z-index: -1;
+
+      transition: all 0.5s;
+      backdrop-filter: blur(5px);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      background: rgba(0, 0, 0, 0.5);
+    }
   }
 
   &__nav a {
@@ -42,11 +74,79 @@
     text-decoration: none;
     font-size: 15px;
     line-height: 27px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 24px;
+    }
+  }
+
+  .hamburger-menu {
+    .menu__btn {
+      display: block;
+      position: relative;
+
+      width: 36px;
+
+      padding-right: 40px;
+
+      & > span,
+      & > span::before,
+      & > span::after {
+        display: block;
+        position: absolute;
+
+        width: 100%;
+        height: 4px;
+
+        transition: 0.2s;
+
+        background-color: #ffffff;
+      }
+
+      & > span::before {
+        content: "";
+        top: -12px;
+      }
+      & > span::after {
+        content: "";
+        top: 12px;
+      }
+      @media screen and (min-width: 601px) {
+        display: none;
+      }
+    }
+
+    #menu__toggle {
+      display: none;
+
+      &:checked ~ .header__nav {
+        right: 0;
+      }
+
+      &:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+        &::before {
+          top: 0;
+          transform: rotate(0);
+        }
+        &::after {
+          top: 0;
+          transform: rotate(90deg);
+        }
+      }
+
+      &:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+      }
+    }
   }
 }
 
 .footer {
   color: #ffffff;
+
+  padding: 107px 0;
 
   background: rgba(37, 43, 66, 1);
 
@@ -62,8 +162,6 @@
   }
 
   &__body {
-    padding: 107px 1rem;
-
     .footer-menu-list {
       display: flex;
       flex-wrap: wrap;
@@ -97,8 +195,13 @@
         line-height: 57px;
 
         letter-spacing: 0.2px;
+        text-align: left;
 
         color: #ffffff;
+
+        @media screen and (max-width: 772px) {
+          font-size: 32px;
+        }
       }
       h3 {
         font-style: normal;
@@ -116,6 +219,9 @@
         text-decoration: none;
 
         color: #ffffff;
+      }
+      @media screen and (max-width: 772px) {
+        gap: 40px;
       }
     }
   }

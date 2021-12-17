@@ -15,4 +15,11 @@
   padding: 16px 58px;
 
   text-decoration: none;
+
+  @media screen and (max-width: 772px) {
+    font-size: 22px;
+    line-height: 33px;
+
+    padding: 16px 58px;
+  }
 }
